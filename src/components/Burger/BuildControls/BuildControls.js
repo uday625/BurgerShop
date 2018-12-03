@@ -1,5 +1,6 @@
 import React from 'react';
 import BuildControl from './BuildControl/BuildControl';
+//import Modal from '../../UI/Modal/Modal';
 
 import './BuildControls.css'
 
@@ -23,7 +24,12 @@ const BuildControls = (props) => {
                         removed ={ () => props.ingredientRemoved (ctrl.type)}
                         disabled = {props.disabled[ctrl.type]}
                         />
-                ))}        
+                ))}
+                
+                <button 
+                    className="OrderButton"
+                    disabled ={!props.purchasable}
+                    onClick ={props.ordered}> ORDER NOW</button>        
         </div>
     );
 }
