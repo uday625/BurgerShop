@@ -1,6 +1,5 @@
 import React from 'react';
 import BuildControl from './BuildControl/BuildControl';
-//import Modal from '../../UI/Modal/Modal';
 
 import './BuildControls.css'
 
